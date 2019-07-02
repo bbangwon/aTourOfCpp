@@ -12,6 +12,18 @@ void print_square(double x)
 	cout << "the square of " << x << " is " << square(x) << "\n";
 }
 
+constexpr double nth(double x, int n)	//0 <= n 이라고 가정
+{
+	double res = 1;
+	int i = 0;
+	while (i<n)	//while루프 : 조건이 true일 동안 반복
+	{
+		res *= x;
+		++i;
+	}
+	return res;
+}
+
 int main()
 {
 	print_square(1.234);	//'the square of 1.234 is 1.52276'를 출력
