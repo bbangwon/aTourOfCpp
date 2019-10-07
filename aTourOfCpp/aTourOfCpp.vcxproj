@@ -154,7 +154,10 @@
     <ClCompile Include="aTourOfCpp001.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="aTourOfCpp002.cpp" />
+    <ClCompile Include="aTourOfCpp002.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="aTourOfCpp003.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />
