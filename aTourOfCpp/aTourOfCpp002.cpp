@@ -45,6 +45,33 @@ int count_x(const char* p, char x)
 	return count;
 }
 
+bool accept()
+{
+	cout << "계속 할까요?(y 또는 n)?\n";	//질문 출력
+	char answer = 0;	//입력에 나타나지 않을 값으로 변수 초기화
+	cin >> answer;	//응답 읽기
+	if (answer == 'y')
+		return true;
+	return false;
+}
+
+bool accept2()
+{
+	cout << "계속 할까요?(y 또는 n)?\n";	//질문 출력
+	char answer = 0;	//입력에 나타나지 않을 값으로 변수 초기화
+	cin >> answer;	//응답 읽기
+	switch (answer)
+	{
+	case 'y':
+		return true;
+	case 'n':
+		return false;
+	default:
+		cout << "거부한 것으로 받아들입니다.\n";
+		return false;
+	}
+}
+
 int main()
 {
 	print_increment();
